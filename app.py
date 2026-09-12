@@ -598,7 +598,7 @@ window.addEventListener('DOMContentLoaded', () => {
 </html>
 """
 
-st.title("🎲 Manual Ludo Game")
+st.title("🎲 LAMBODARA LUDO GAME")
 
 # Render embedded HTML component with responsive scrolling disabled
 components.html(LUDO_HTML_CODE, height=850, scrolling=True)
