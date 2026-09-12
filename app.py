@@ -580,7 +580,12 @@ function checkCaptures(activePawn, activeColor, activeTrackIdx) {
 function captureBoard() {
     const wrapper = document.getElementById('board-wrapper');
     
-    html2canvas(wrapper).then(canvas => {
+    html2canvas(wrapper, {
+        useCORS: true,
+        allowTaint: true,
+        scale: 2,
+        logging: false
+    }).then(canvas => {
         const link = document.createElement('a');
         link.download = `ludo-board-${Date.now()}.png`;
         link.href = canvas.toDataURL('image/png');
