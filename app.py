@@ -2,7 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 st.set_page_config(
-    page_title="Manual Ludo Game",
+    page_title="LAMBODARA LUDO GAME",
     page_icon="🎲",
     layout="wide"
 )
